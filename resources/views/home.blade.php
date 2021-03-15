@@ -14,7 +14,10 @@
                 <?php if (auth()->user()->isAdmin == 1) { ?>
                     <div class="panel-body">
                         <a href="{{ url('admin/routes')}}">Admin</a>
-                    </div><?php } else echo '<div class="panel-heading">Normal User</div>';?>
+                    </div><?php } else  ;?>
+                    <div class="panel-body">
+                        {{ auth()->user()->result }}
+                    </div>
             </div>
         </div>
     </div>
